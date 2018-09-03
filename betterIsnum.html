@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NUM</title>
+    </head>
+
+    <body>
+        <h2>Please input a not number type, then it will aleart</h2>
+        <input id="in1" type="text">
+        <button type="button" onclick="isnum()">Onclick</button>
+    </body>
+
+    <!-- 查看是不是大都是空格， 用replace来代替， 相当于match -->
+    <script>
+        function isnum()
+        {
+            var num = document.getElementById("in1").value;
+            if (isNaN(num)||x.replace(/(^\s*)|(\s*$)/g, ""))
+            {
+                alert("Not number")
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Info</title>
+    </head>
+
+    <body>
+        <h1>This is JavaScript function of onclick to change infomation</h1>
+
+        <p id="dome">Onclick to change this pargraph</p>
+        <button type="button" onclick="changIndo()">Onclick</button>
+    </body>
+
+    <script>
+        function changIndo()
+        {
+            info=document.getElementById("dome");
+            info.innerHTML = "New thing";
+        }
+    </script>
+    <!-- innerHTML可以改变相对应的值， 替换掉当前的值， 相当于一个变量， info.innerHTML = “new“, 相当于把<p id ="deome">里面的内容替换掉 -->
+</html>

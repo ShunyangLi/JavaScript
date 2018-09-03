@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Date</title>
+    </head>
+    
+    <body>
+        <h1>This is my first JavaScript code</h1>
+        <p id="Dome1"></p>
+        <button type="button" onclick="displayDate()">Display date</button>
+    </body>
+
+    <!-- innerHTML在JS是双向功能：获取对象的内容 或 向对象插入内容； 改变文本, URL, 及链接目标:-->
+    <script>
+        function displayDate()
+        {
+            document.getElementById("Dome1").innerHTML = Date();
+        }
+    </script>
+</html>

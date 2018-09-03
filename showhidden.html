@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Show</title>
+    </head>
+
+    <body>
+        <h1>JavaScript can show hidden HTML elements.</h1>
+        <p id="demo" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="show()">Show</button>
+
+    </body>
+
+    <!-- 在改变style的时候是=， 不是（）里面 -->
+
+    <script>
+        function show()
+        {
+            x = document.getElementById("demo");
+            x.style.display = 'block';
+        }
+    </script>
+</html>

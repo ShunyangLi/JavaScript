@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GIF</title>
+    </head>
+
+    <body>
+        <img id="gif" onclick="changeImg()" src="./img/pic_bulboff.gif" width="100" height="180">
+        <p>Onclick the img to light it</p>
+    </body>
+
+    <script>
+        function changeImg()
+        {
+            img = document.getElementById("gif");
+            if (img.src.match("bulboff"))
+            {
+                img.src="./img/pic_bulbon.gif"
+            } else {
+                img.src="./img/pic_bulboff.gif"
+            }
+        }
+    </script>
+    <!-- element.src.match("bulbon") 的作用意思是：
+        检索 <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif">
+        里面 src 属性的值有没有包含 bulbon 这个字符串，如果存在字符串 bolbon，
+        图片 src 更新为 bulboff.gif
+        若匹配不到 bulbon 字符串，src 则更新为 bulbon.gif
+    -->
+    <!-- 就是利用match来查看src俩面是否包含match的字符，如果包含则img.src=""，改成所需的src的位置， else同理 -->
+</html>

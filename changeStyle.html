@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Style</title>
+    </head>
+
+    <body>
+        <h1>This is my first JavaScript</h1>
+        <p id="p1">Onclick button can change this color</p>
+        <button type="button" onclick="changeStyle()">Onclick</button>
+    </body>
+
+    <!-- 改变 HTML 元素的样式，属于改变 HTML 属性的变种。 -->
+    <script>
+        function changeStyle()
+        {
+            p = document.getElementById("p1");
+            p.style.color = "#ff0000";
+            p.style.fontSize='35px';
+        }
+    </script>
+</html>
